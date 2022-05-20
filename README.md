@@ -1,2 +1,2 @@
 # k8s-poc
-K8s poc
+Repository with some yaml files which contain example of k8s configuration. 
