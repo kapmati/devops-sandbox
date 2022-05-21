@@ -5,11 +5,11 @@ metadata:
   namespace: kubernetes-dashboard
 spec:
   rules:
-    - host: "dashboard.com"
+    - host: dashboard.com
     - http:
         paths:
           - pathType: Prefix
-            path: /test
+            path: /
             backend:
               service:
                 name: kubernetes-dashboard
