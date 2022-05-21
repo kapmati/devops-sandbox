@@ -1,3 +1,3 @@
 # devops-sandbox
-Project with various tools/scripts releated to DevOps area
+Project with various tools/scripts related to DevOps area
 
