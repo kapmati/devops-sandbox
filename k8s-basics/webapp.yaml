@@ -5,7 +5,7 @@ metadata:
   labels:
     app: webapp
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: webapp
@@ -39,13 +39,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: webapp-service
+  name: webapp-internal-service
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: webapp
   ports:
     - protocol: TCP
       port: 3000
       targetPort: 3000
-      nodePort: 30100
